@@ -3,12 +3,35 @@ body {
   font-family: "Roboto", Arial, sans-serif;
 
   min-height: 100vh;
+  scrollbar-width: thin;
+  scrollbar-color: #e53935 #f5f5f5;
+}
+/* Áp dụng cho toàn bộ scrollbar */
+::-webkit-scrollbar {
+  width: 2px; /* Chiều rộng của scrollbar */
+  height: 2px; /* Chiều cao của scrollbar (cho scrollbar ngang) */
 }
 
-.container_ds {
-  max-width: 1000px;
-  margin: 40px auto;
-  padding: 20px;
+/* Phần nền của scrollbar (track) */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Màu nền nhẹ */
+  border-radius: 10px; /* Bo tròn các góc */
+}
+
+/* Phần thanh kéo (thumb) */
+::-webkit-scrollbar-thumb {
+  background: #ff0000; /* Màu đỏ */
+  border-radius: 10px; /* Bo tròn các góc */
+}
+
+/* Phần thanh kéo khi hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #cc0000; /* Màu đỏ đậm hơn khi hover */
+}
+
+/* Nếu bạn muốn tùy chỉnh các góc của scrollbar (ít dùng hơn) */
+::-webkit-scrollbar-corner {
+  background: #f1f1f1;
 }
 
 .title {
