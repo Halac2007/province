@@ -5,6 +5,13 @@ body {
   min-height: 100vh;
   scrollbar-width: thin;
   scrollbar-color: #e53935 #f5f5f5;
+  position: relative;
+  background: #f7f7f7 url(https://static.plo.vn/v4/web/knm/images/bg/KNM-Vang-01.png) no-repeat;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
 }
 /* Áp dụng cho toàn bộ scrollbar */
 ::-webkit-scrollbar {
@@ -52,9 +59,11 @@ body {
 }
 
 .card {
-  background: linear-gradient(135deg, #f0f0f0 100%, #ffffff 100%);
+  /* background: linear-gradient(135deg, #f0f0f0 100%, #ffffff 100%); */
+  background-color: #fff;
   border-radius: 18px;
-  box-shadow: inset -1px 1px 1px 0 #d2d2d2, /* highlight inner top/left */ inset -1px -1px 1px 0 #c4c4c4;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /*box-shadow: inset -1px 1px 1px 0 #d2d2d2, /* highlight inner top/left */ /* inset -1px -1px 1px 0 #c4c4c4;
   /* shadow inner bottom/right */
   padding: 22px 10px 14px 10px;
   text-align: center;
